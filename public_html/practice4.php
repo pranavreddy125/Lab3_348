@@ -1,5 +1,4 @@
 <?php
-// practice4.php — minimal, stable formatting
 $submitted = ($_SERVER['REQUEST_METHOD'] === 'POST');
 $n = $submitted ? (int)($_POST['n'] ?? 0) : 0;
 ?>
@@ -20,7 +19,6 @@ $n = $submitted ? (int)($_POST['n'] ?? 0) : 0;
   <?php if ($submitted): ?>
     <?php if ($n >= 1): ?>
       <h2>Table 1 to <?php echo $n; ?></h2>
-      <!-- Old-school attributes for consistent rendering -->
       <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse; margin:10px auto; text-align:center;">
         <tr>
           <th>*</th>
